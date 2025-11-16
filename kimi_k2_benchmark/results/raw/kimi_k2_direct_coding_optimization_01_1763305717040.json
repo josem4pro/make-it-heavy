@@ -1,0 +1,14 @@
+{
+  "model_id": "kimi_k2_direct",
+  "task_id": "coding_optimization_01",
+  "category": "coding",
+  "timestamp": "2025-11-16T12:08:37.040206",
+  "accuracy": 0.7339571132112701,
+  "latency": 2.693566579731603,
+  "completion": "[Simulated response for coding_optimization_01]",
+  "output_tokens": 460,
+  "meta": {
+    "model": "kimi_k2_direct",
+    "provider": "openrouter"
+  }
+}

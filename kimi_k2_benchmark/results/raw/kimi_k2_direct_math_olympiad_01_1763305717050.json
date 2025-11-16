@@ -1,0 +1,14 @@
+{
+  "model_id": "kimi_k2_direct",
+  "task_id": "math_olympiad_01",
+  "category": "math",
+  "timestamp": "2025-11-16T12:08:37.050380",
+  "accuracy": 0.7721344376159041,
+  "latency": 2.7576005527388876,
+  "completion": "[Simulated response for math_olympiad_01]",
+  "output_tokens": 446,
+  "meta": {
+    "model": "kimi_k2_direct",
+    "provider": "openrouter"
+  }
+}

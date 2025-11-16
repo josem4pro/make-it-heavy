@@ -1,0 +1,14 @@
+{
+  "model_id": "kimi_k2_direct",
+  "task_id": "creative_agentic_01",
+  "category": "creative",
+  "timestamp": "2025-11-16T12:08:37.070927",
+  "accuracy": 0.7518676530513626,
+  "latency": 1.7105685249464826,
+  "completion": "[Simulated response for creative_agentic_01]",
+  "output_tokens": 401,
+  "meta": {
+    "model": "kimi_k2_direct",
+    "provider": "openrouter"
+  }
+}

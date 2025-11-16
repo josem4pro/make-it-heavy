@@ -1,0 +1,10 @@
+{
+  "model_id": "qwen3_coder_30b",
+  "task_id": "math_olympiad_01",
+  "category": "math",
+  "timestamp": "2025-11-16T12:08:37.155110",
+  "error": "Model not available",
+  "accuracy": 0.0,
+  "latency": 0,
+  "completion": null
+}

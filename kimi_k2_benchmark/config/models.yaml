@@ -1,0 +1,19 @@
+models:
+  kimi_k2_direct:
+    provider: "openrouter"
+    model: "moonshotai/kimi-k2-thinking"
+    description: "Kimi K2 Thinking directo vía OpenRouter"
+    api_key: "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"
+    base_url: "https://openrouter.ai/api/v1"
+
+  kimi_k2_via_make_it_heavy:
+    provider: "make_it_heavy"
+    model: "moonshotai/kimi-k2-thinking"
+    description: "Kimi K2 Thinking vía orquestador multi-agente make-it-heavy (8 agentes)"
+    config_path: "../config.yaml"
+
+  qwen3_coder_30b:
+    provider: "ollama"
+    model: "qwen3-coder:30b"
+    description: "Qwen3 Coder 30B local vía Ollama"
+    base_url: "http://localhost:11434"

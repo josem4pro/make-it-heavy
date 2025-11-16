@@ -1,0 +1,14 @@
+{
+  "model_id": "kimi_k2_direct",
+  "task_id": "code_refactor_01",
+  "category": "coding",
+  "timestamp": "2025-11-16T12:08:37.060608",
+  "accuracy": 0.7899109710746022,
+  "latency": 2.971881355434825,
+  "completion": "[Simulated response for code_refactor_01]",
+  "output_tokens": 200,
+  "meta": {
+    "model": "kimi_k2_direct",
+    "provider": "openrouter"
+  }
+}

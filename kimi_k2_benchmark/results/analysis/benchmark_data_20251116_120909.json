@@ -1,0 +1,36 @@
+{
+  "kimi_k2_via_make_it_heavy": {
+    "status": "available",
+    "avg_accuracy": 0.8271956770160911,
+    "avg_latency": 8.298068207298384,
+    "min_latency": 6.136598460056759,
+    "max_latency": 11.197780061511619,
+    "tokens_per_second": 33.61506232191985,
+    "error_rate": 0.0,
+    "total_runs": 5,
+    "successful_runs": 5,
+    "std_accuracy": 0.090020719836209,
+    "std_latency": 2.134615534800287
+  },
+  "kimi_k2_direct": {
+    "status": "available",
+    "avg_accuracy": 0.7935452424588982,
+    "avg_latency": 2.615469902782805,
+    "min_latency": 1.7105685249464826,
+    "max_latency": 2.971881355434825,
+    "tokens_per_second": 139.00833535150193,
+    "error_rate": 0.0,
+    "total_runs": 5,
+    "successful_runs": 5,
+    "std_accuracy": 0.07367803947312265,
+    "std_latency": 0.5195989254290607
+  },
+  "qwen3_coder_30b": {
+    "status": "unavailable",
+    "avg_accuracy": 0.0,
+    "avg_latency": 0.0,
+    "tokens_per_second": 0.0,
+    "error_rate": 1.0,
+    "total_runs": 5
+  }
+}

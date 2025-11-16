@@ -1,0 +1,30 @@
+metrics:
+  - name: "accuracy"
+    type: "scalar"
+    description: "1 if the solution matches ground truth (for applicable tasks), 0 if not"
+    range: [0, 1]
+
+  - name: "latency_seconds"
+    type: "scalar"
+    description: "Total time from request to response in seconds"
+    unit: "seconds"
+
+  - name: "tokens_per_second"
+    type: "scalar"
+    description: "Estimated tokens generated per second (output_tokens / latency)"
+    unit: "tokens/sec"
+
+  - name: "qualitative_score"
+    type: "scalar"
+    description: "Heuristic score for tasks without ground truth based on evaluation criteria"
+    range: [0, 1]
+
+  - name: "error_rate"
+    type: "scalar"
+    description: "Rate of errors or failures during execution"
+    range: [0, 1]
+
+  - name: "completeness_score"
+    type: "scalar"
+    description: "How completely the response addresses all requirements"
+    range: [0, 1]

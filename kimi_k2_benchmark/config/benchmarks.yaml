@@ -1,0 +1,100 @@
+benchmarks:
+  - id: "reasoning_puzzle_01"
+    category: "reasoning"
+    prompt: |
+      Three friends (Alice, Bob, Charlie) are comparing their ages:
+      - Alice is twice as old as Bob was when Alice was as old as Bob is now
+      - Bob is 20 years old
+      - Charlie is as old as Alice and Bob together
+      What is Charlie's age?
+    expected_type: "numerical_answer"
+    has_ground_truth: true
+    ground_truth: 35
+
+  - id: "coding_optimization_01"
+    category: "coding"
+    prompt: |
+      Optimize the following Python function that finds all pairs in a list that sum to a target value.
+      Current implementation is O(n²). Make it O(n).
+
+      ```python
+      def find_pairs(arr, target):
+          pairs = []
+          for i in range(len(arr)):
+              for j in range(i + 1, len(arr)):
+                  if arr[i] + arr[j] == target:
+                      pairs.append((arr[i], arr[j]))
+          return pairs
+      ```
+
+      Provide the optimized code with explanation.
+    expected_type: "code_with_explanation"
+    has_ground_truth: false
+    evaluation_criteria:
+      - "Uses hash set or dictionary"
+      - "O(n) time complexity"
+      - "Handles duplicates correctly"
+      - "Clear explanation provided"
+
+  - id: "math_olympiad_01"
+    category: "math"
+    prompt: |
+      Prove that for any positive integer n, the expression n⁵ - n is always divisible by 30.
+      Provide a step-by-step proof.
+    expected_type: "mathematical_proof"
+    has_ground_truth: true
+    ground_truth_approach: "Factor as n(n²-1)(n²+1) = n(n-1)(n+1)(n²+1), show divisibility by 2, 3, and 5"
+
+  - id: "code_refactor_01"
+    category: "coding"
+    prompt: |
+      Refactor this code to fix code smells and improve maintainability:
+
+      ```python
+      class DataProcessor:
+          def processData(self, d):
+              r = []
+              for i in d:
+                  if i > 0:
+                      if i < 100:
+                          x = i * 2
+                          if x % 3 == 0:
+                              r.append(x)
+                          else:
+                              r.append(i)
+                      else:
+                          r.append(i / 2)
+                  else:
+                      pass
+              return r
+      ```
+
+      Identify and fix: naming issues, nested conditionals, magic numbers, empty else block.
+    expected_type: "refactored_code"
+    has_ground_truth: false
+    evaluation_criteria:
+      - "Descriptive variable and method names"
+      - "Reduced nesting (max 2 levels)"
+      - "Constants for magic numbers"
+      - "Removed empty else block"
+      - "Added docstring"
+
+  - id: "creative_agentic_01"
+    category: "creative"
+    prompt: |
+      Design a distributed rate limiting system that must satisfy these constraints:
+      1. Support 100,000 requests per second across multiple servers
+      2. Allow configurable limits per user (requests/minute)
+      3. Provide < 10ms latency for limit checks
+      4. Handle server failures gracefully
+      5. Support both hard and soft limits
+
+      Describe the architecture, data structures, algorithms, and trade-offs in your design.
+    expected_type: "system_design"
+    has_ground_truth: false
+    evaluation_criteria:
+      - "Uses appropriate data structures (sliding window, token bucket)"
+      - "Addresses distributed state problem"
+      - "Considers CAP theorem trade-offs"
+      - "Handles failure scenarios"
+      - "Scalability analysis provided"

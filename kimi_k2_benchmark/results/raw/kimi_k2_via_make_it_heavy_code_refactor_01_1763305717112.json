@@ -1,0 +1,14 @@
+{
+  "model_id": "kimi_k2_via_make_it_heavy",
+  "task_id": "code_refactor_01",
+  "category": "coding",
+  "timestamp": "2025-11-16T12:08:37.112492",
+  "accuracy": 0.8071407306373661,
+  "latency": 9.631982853616893,
+  "completion": "[Simulated response for code_refactor_01]",
+  "output_tokens": 330,
+  "meta": {
+    "model": "kimi_k2_via_make_it_heavy",
+    "provider": "make_it_heavy"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model_id": "kimi_k2_direct",
+  "task_id": "reasoning_puzzle_01",
+  "category": "reasoning",
+  "timestamp": "2025-11-16T12:08:37.030016",
+  "accuracy": 0.9198560373413525,
+  "latency": 2.943732501062227,
+  "completion": "[Simulated response for reasoning_puzzle_01]",
+  "output_tokens": 179,
+  "meta": {
+    "model": "kimi_k2_direct",
+    "provider": "openrouter"
+  }
+}
